@@ -1,0 +1,91 @@
+/* Base reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centering container */
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Form container */
+.create-quiz-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Title */
+.create-quiz-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form elements */
+.create-quiz-container form input[type="text"],
+.create-quiz-container form textarea,
+.create-quiz-container form select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.3s ease;
+    font-size: 16px;
+}
+
+/* Focus styles */
+.create-quiz-container form input:focus,
+.create-quiz-container form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit button */
+.create-quiz-container form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-quiz-container form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.create-quiz-container a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.create-quiz-container a:hover {
+    text-decoration: underline;
+}
+
+/* Feedback messages */
+#feedback {
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
